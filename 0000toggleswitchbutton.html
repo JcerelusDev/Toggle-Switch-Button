@@ -80,7 +80,7 @@ toggle.onclick = action
 var checked = false
 
 function action(){
-if(!toggle.classList.contains("move")){
+if(!toggle.classList.contains("move")){ //check if class move already exists
 checked = true;
 }else{
 checked = false;
@@ -88,12 +88,12 @@ checked = false;
 
 
 if(checked){
-activate()
+activate() // call activate function to activate the button
 
 }
 
 if(!checked){
-deactivate()
+deactivate() // call deactivate func to deactivate the button
 }
 
 
